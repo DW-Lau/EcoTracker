@@ -16,26 +16,35 @@
     <header>
         <h1>EcoTracker</h1>
         <div class="setting_profil">
-            <label for="user">User :</label> <input type="text" name="user" id="user" >
-            <label for="startingAmount">Somme de départ</label><input type="number" name="startingAmount" id="startingAmount">
-            <button class="saveProfil" title="Sauvegarder le profil" >
-                <i class="fas fa-save"></i>
-            </button>
-            <button class="ereaseProfil" title="Effacer le profil">
-                <i class="fas fa-backspace"></i>
-            </button>
+            <span class="mise_Form">
+                <label for="user">User :</label> <input type="text" name="user" id="user" >
+            </span>
+            <span class="mise_Form">
+                <label for="startingAmount">Somme de départ</label><input type="number" name="startingAmount" id="startingAmount">
+            </span>
+            <span class="mise_Form">
+                <button class="saveProfil" title="Sauvegarder le profil" >
+                    <i class="fas fa-save"></i>
+                </button>
+                <button class="ereaseProfil" title="Effacer le profil">
+                    <i class="fas fa-backspace"></i>
+                </button>
+            </span>
         </div> 
     </header>
     <section>
         <aside class="tracker_inputs">
             <form>
                 <span class="all_inputs">
-                    <label for="lable">Libellé :</label><input type="text" name="" class="tracker-input">
+                    <label for="lable">Libellé :</label>
+                    <input type="text" name="label" class="tracker-input">
                 </span>
                 <span class="all_inputs">
+                    <label for="date">Date :</label>
                     <input type="date" name="date" id="date">
                 </span>
                 <span class="all_inputs">
+                    <label for="montant">Montant :</label>
                     <input type="number" name="montant" id="montant">
                 </span>
                 <span class="all_inputs">
