@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTracker</title>
+</head>
+<body>
+    <header>
+        <h1>EcoTracker</h1>
+        <div class="setting_profil">
+            <label for="user">User :</label> <input type="text" name="user" id="user" >
+            <label for="startingAmount">Somme de départ</label><input type="number" name="startingAmount" id="startingAmount">
+            <button class="saveProfil" title="Sauvegarder le profil" >
+                <i class="fas fa-save"></i>
+            </button>
+            <button class="ereaseProfil" title="Effacer le profil">
+                <i class="fas fa-backspace"></i>
+            </button>
+        </div> 
+    </header>
+    <section>
+        <aside class="tracker_inputs">
+            <form>
+                <span class="all_inputs">
+                    <label for="lable">Libellé :</label><input type="text" name="" class="tracker-input">
+                </span>
+                <span class="all_inputs">
+                    <input type="date" name="date" id="date">
+                </span>
+                <span class="all_inputs">
+                    <input type="number" name="montant" id="montant">
+                </span>
+                <span class="all_inputs">
+                    <select name="types" id="op_types">
+                        <option value="">Moyen de l'opération</option>
+                        <option value="carte">Carte Bleu</option>
+                        <option value="cheque">Cheque</option>
+                        <option value="cash">Liquide</option>
+                        <option value="prelevement">Prélevement</option>
+                    </select>
+                </span>
+                <button class="tracker-button">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </form>
+        </aside>
+        <article class="tracker_table">
+            <table class="table_record">
+               <thead class="table_titles">
+                    <tr class="title">
+                        <td class="title_date">Date:</td>
+                        <td class="title_lable">Libellé:</td>
+                        <td class="title_amount">Montant:</td>
+                        <td class="title_type">Type:</td>
+                    </tr>
+                </thead>
+                <tbody class="table_list">
+
+                </tbody>
+            </table>
+        </article>
+        <footer>
+            <div class="bloc_result">
+                <p> Dépense total : <span class="resultat"></span>
+                </p>
+        </div>
+        </footer>
+    </section>
+</body>
+</html>
