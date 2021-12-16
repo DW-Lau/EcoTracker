@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #FBF8EE;
+  height: 100vh;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #D5EDE6;
+  height: 10vh;
+  width: 100%;
+  padding: 5px;
+}
+
+body header h1 {
+  color: #3F7DF2;
+  font-family: "Poppins", sans-serif;
+  width: 40%;
+  text-align: center;
+  border: solid 2px #3F7DF2;
+}
+
+body header .setting_profil {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*Fin classs save/ereaseProfil*/
+}
+
+body header .setting_profil .saveProfil, body header .setting_profil .ereaseProfil {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+body header .setting_profil .saveProfil .fa-save, body header .setting_profil .ereaseProfil .fa-save {
+  color: #94E75D;
+}
+
+body header .setting_profil .saveProfil .fa-backspace, body header .setting_profil .ereaseProfil .fa-backspace {
+  color: #C67E78;
+}
+/*# sourceMappingURL=styles.css.map */

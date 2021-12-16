@@ -1,0 +1,62 @@
+$fontTitles:'Poppins', sans-serif;
+$casualFont:'Roboto', sans-serif;
+$fas:1.2em;
+@mixin buttons($border,$borderradius,$cursor) {
+    border:$border ;
+    border-radius: $borderradius;
+    cursor:$cursor;
+}
+@mixin aligment($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin wrapping ($wrap,$justify,$align){
+    display:flex;
+    flex-wrap:$wrap;    
+    justify-content: $justify;
+    align-items: $align;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: $casualFont;
+}
+body{
+    background: #FBF8EE;
+    height: 100vh;
+
+    header{
+        @include aligment(row,space-between ,center );
+        background: #D5EDE6;
+        height: 10vh;
+        width: 100%;
+        padding:5px;
+            h1{
+            color:#3F7DF2;
+            font-family: $fontTitles;
+            width: 40%;
+            text-align: center;
+            border: solid 2px #3F7DF2;
+            }
+            .setting_profil{
+                width: 55%;
+                @include aligment(row,space-between , center );
+                .saveProfil,.ereaseProfil{
+                    width:40px;
+                    height:40px;
+                    @include buttons(none,10px,pointer );
+                    font-size: $fas;
+                        .fa-save{
+                            color:#94E75D;
+                        }
+                        .fa-backspace{
+                            color:#C67E78;
+                        }
+                }/*Fin classs save/ereaseProfil*/
+            }
+     }
+}
