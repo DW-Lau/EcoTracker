@@ -28,24 +28,29 @@ $fas:1.2em;
 body{
     background: #FBF8EE;
     height: 100vh;
+    max-width: 100%;
+    @include aligment(column,space-between ,center );
 
     header{
         @include aligment(row,space-between ,center );
-        background: #D5EDE6;
+        background: #051742;
         height: 10vh;
         width: 100%;
         padding:5px;
             h1{
-            color:#3F7DF2;
+            color:#D5EDE6;
             font-family: $fontTitles;
+            font-size: 3em;
             width: 40%;
             text-align: center;
-            border: solid 2px #3F7DF2;
             }
             .setting_profil{
-                width: 55%;
+                color:#D5EDE6;
+                max-width: 55%;
+                min-width: 50%;
                 @include aligment(row,space-between , center );
                 .saveProfil,.ereaseProfil{
+                    margin: 0 5px;
                     width:40px;
                     height:40px;
                     @include buttons(none,10px,pointer );
@@ -57,6 +62,15 @@ body{
                             color:#C67E78;
                         }
                 }/*Fin classs save/ereaseProfil*/
+                .mise_Form{
+                    width: 33%;
+                    @include aligment(row,flex-start , center);
+                    input{
+                        border-width:0 0 2px 0;
+                        border-color: #D5EDE6;
+                        background: none;
+                    }
+                }
             }
      }
 }
